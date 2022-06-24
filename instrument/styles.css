@@ -1,0 +1,24 @@
+body{
+    background-color: #000;
+    color: white;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.company-name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.nav-top-ul{
+    display: flex;    
+}
+
+.nav-top-li{
+    list-style: none;
+    padding-left: 4em;
+}
