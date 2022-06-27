@@ -1,9 +1,12 @@
 body{
     background-color: white;
-
     padding: 3em;
 }
 
+/* 
+Navigation
+==========
+*/
 .page-header{
     display: flex;
     justify-content: space-between;
@@ -23,35 +26,17 @@ body{
     font-size: 0.75em;
 }
 
+/*
+section-with-padding
+*/
 .section-with-padding{
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 .motto-text{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 6em;
-}
-
-#learnMore{
-    position: relative;
-    color: white;    
-}
-
-.fa-solid{
-    position: absolute;
-    color:white;    
-    left: 4.5em;
-    top:0.4em;
-}
-
-.section-button{
-    position: absolute;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    font-size: 1.5em;
-    padding: 0.5em 2em 0.5em 0.5em;
 }
 
 .brief{
@@ -61,33 +46,108 @@ body{
     margin-bottom: 2.5em;
 }
 
+h1{
+    margin:0;
+}
+/*
+Button 
+======
+*/
+
+.button-style{
+    padding: 0.5em;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
 .full-width{
     width: 100%;
+    margin: 5em auto;
+    text-align: center;
+}
+
+/* 
+Article at center
+=================
+*/
+
+.article-at-center{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    width: 60%;
     margin: 0 auto;
 }
 
-.what-we-do{
-    width:70%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-}
+/* 
+Alternating articles
+====================
+*/
 
 .alternating-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.alternate-section-img{
-    width:40%;
+.alternating-section:nth-of-type(odd){
+    flex-direction: row-reverse;
 }
 
-.alternate-section-article{
-    width:40%;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+.alternate-section-img{
+    width:55%;
 }
 
 .article-and-button{
-    /* display: flex; */
+    width:30%;   
+}
+
+.alternate-section-article{    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 1em; 
+}
+
+/* 
+Button at center 
+*/
+.button-at-center{    
+    text-align: center;
+}
+
+/*
+Featured section
+*/
+.featured-section{
+    display: flex;
+}
+
+.featured-column{
+    padding: 0;
+}
+
+.featured-heading{
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.featured-para{
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+}
+
+/*
+customers-logo-section
+*/
+.customers-logo-section{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.customer-logo{
+    padding-left: 3em;
 }
