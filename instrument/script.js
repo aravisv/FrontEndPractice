@@ -1,3 +1,3 @@
 document.getElementsByClassName("learnMore").addEventListener("click",()=>{
-    console.log("kari basava")
+    console.log("learnMore clicked")
     });
